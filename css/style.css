@@ -46,9 +46,8 @@ nav ul li a:hover{
 }
 
 body{
-	background-image: url(../img/bgs/bg-mobile-devices.png);
+	background-color: rgb(246, 246, 246);
 	background-attachment: fixed;
-	background-repeat: no-repeat;
 	overflow-x: hidden;
 }
 
