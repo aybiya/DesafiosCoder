@@ -3,6 +3,7 @@
 	font-family: 'Raleway', sans-serif;
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 html{
@@ -23,6 +24,11 @@ nav ul{
 	margin: 10px;
 } 
 
+nav img{
+	width: 200px;
+	margin-bottom: 10px;
+}
+
 nav ul li{
 	list-style: none;
 	margin-right: 20px;
@@ -40,11 +46,10 @@ nav ul li a:hover{
 }
 
 body{
-	background-color: rgba(255, 255, 255, 0.6);
-	background-image: url(../img/bgs/abstract-2.png);
-	background-repeat: repeat;
+	background-image: url(../img/bgs/bg-mobile-devices.png);
 	background-attachment: fixed;
-	overflow: auto;
+	background-repeat: no-repeat;
+	overflow-x: hidden;
 }
 
 h1, 
@@ -231,16 +236,6 @@ footer div p{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
-
-.fondo__bglight--xxl{
-	background-color: rgba(255, 255, 255, 0.6);
-	text-align: center;
-	width: 90%;
-	height: auto;
-	padding: 15px 20px 50px 20px;
-	margin: 20px auto;
-}
-
 .inicio__titulo--xxl{
 	color:  rgb(217, 143, 177);
 	font-size: 2.5rem;
@@ -366,7 +361,7 @@ footer div p{
 
 
 /* ======== media queries ======== */
-
+/* min-width: 768px*/
 @media (min-width: 768px){
 .grid__contenedor--inicio{
 	grid-template-columns: repeat(6, 1fr);
@@ -386,6 +381,13 @@ footer div p{
 	
 }
 
+/* min-width: 800px*/
+@media (min-width: 800px){
+.grid__contenedor--inicio{}
+	body{
+		background-image: url(../img/bgs/abstract-2.png);
+	}
+}
 
 
 /* min-width: 1024px*/
@@ -404,8 +406,8 @@ footer div p{
 	}
 
 	.img-inicio{
-		width: 500px;
-		padding-left: 0 30px;
+	width: 500px;
+	padding-left: 0 30px;
 	}
 
 	.inicio-contenedor{
@@ -425,7 +427,11 @@ footer div p{
 	} 
 }
 
-
+@media (min-width: 280px) and (max-width: 300px){
+	nav img{
+		width: 150px;
+	}
+}
 
 /* Grid Sobre mi */
 
